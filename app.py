@@ -58,7 +58,7 @@ uploaded_file = st.file_uploader("Upload File", type=['png', 'jpg', 'jpeg'])
 # ... rest of your existing code ...
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(r"C:\UMAR DATA\Data Sciences\Deep Learning new\projects\model\perfect_model")
+    return tf.keras.models.load_model("perfect_model.h5")
 
 MODEL = load_model()  # This will be cached
 Classes = ['alpine sea holly', 'anthurium', 'artichoke', 'azalea', 'ball moss', 'balloon flower',
